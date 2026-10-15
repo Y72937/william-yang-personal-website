@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://y72937.github.io/william-yang-personal-website/sitemap.xml
