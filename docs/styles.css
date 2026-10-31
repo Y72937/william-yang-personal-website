@@ -69,3 +69,17 @@ body{padding-bottom:118px}
 }
 @media(prefers-reduced-motion:reduce){.dock-arrow,.turn-arrow{animation:none}}
 @media print{body{padding-bottom:0}.reading-dock{display:none}}
+
+/* Final portfolio expansion: generous evidence panels and readable resource links. */
+.chapter-nav{gap:12px 16px;padding-top:26px}.chapter-nav a{border:1px solid var(--line);padding:9px 13px;border-radius:7px;font-size:14px;line-height:1.35;max-width:100%}.chapter-nav a[aria-current]{background:var(--mint-light);border-color:var(--blue)}
+.final-heading{grid-template-columns:1.05fr 1fr;gap:7%}.final-heading h1{font-size:clamp(38px,4.5vw,68px);max-width:19ch;overflow-wrap:break-word}.final-heading .intro{font-size:20px}
+.portfolio-body{display:flex;flex-direction:column;gap:56px}.portfolio-evidence img{max-height:850px;object-fit:contain;background:var(--soft)}.portfolio-pair{align-items:start;gap:36px}.portfolio-pair .portfolio-evidence img{max-height:650px}
+.portfolio-note{max-width:930px;padding:18px 0 18px 30px;border-left:3px solid var(--mint)}.portfolio-note .copy h2{font-size:31px;margin-bottom:17px}.portfolio-note .copy p{font-size:20px;line-height:1.75;max-width:68ch}
+.resource-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.resource-link{display:flex;justify-content:space-between;align-items:center;gap:25px;min-height:82px;padding:20px 25px;border:1px solid var(--blue);border-radius:8px;font-size:19px;line-height:1.4;background:var(--mint-light);color:var(--blue);transition:background .2s,transform .2s}.resource-link>span:last-child{font-size:29px;flex-shrink:0}.resource-link:hover{background:var(--mint);transform:translateY(-2px)}
+.final-artwork{max-width:1000px;width:100%;margin:auto}.final-artwork .photo img{max-height:1050px;object-fit:contain;background:white;padding:18px}.artwork-caption{display:flex;justify-content:space-between;gap:28px;margin-top:24px}.artwork-caption h2{font-size:31px}.artwork-caption p{font-size:17px;color:var(--muted);text-align:right;line-height:1.6}.group-art .final-heading{grid-template-columns:1.2fr 1fr}.group-art .final-heading h1{max-width:22ch}
+.site-footer>a{font-size:16px;color:var(--ink);border-bottom:1px solid var(--line)}
+.plain-projects ul{display:grid;gap:7px;font-size:15px;line-height:1.5}.plain-projects li+li::before{display:none}
+@media(max-width:760px){.chapter-nav{gap:8px}.chapter-nav a{font-size:12px;padding:8px 10px;gap:6px}.final-heading,.group-art .final-heading{display:block}.final-heading h1{font-size:clamp(36px,8.7vw,58px);max-width:23ch}.final-heading .intro{font-size:18px}.portfolio-body{gap:36px}.portfolio-note{padding:6px 0 6px 20px}.portfolio-note .copy h2{font-size:27px}.portfolio-note .copy p{font-size:18px}.resource-links{grid-template-columns:1fr;gap:12px}.resource-link{font-size:17px;min-height:74px;padding:17px 20px}.portfolio-pair{gap:30px}.final-artwork .photo img{padding:6px}.artwork-caption{display:block;margin-top:18px}.artwork-caption h2{font-size:27px}.artwork-caption p{text-align:left;font-size:16px;margin-top:10px}.site-footer>a{font-size:14px}}
+/* Document names are the headings; remove ordinal prefixes from Contents. */
+.contents-list a{grid-template-columns:1fr 75px 32px;gap:24px}.contents-list h2{font-size:clamp(26px,2.5vw,35px)}
+@media(max-width:760px){.contents-list a{grid-template-columns:1fr 26px;gap:16px}.contents-list h2{font-size:26px}}
